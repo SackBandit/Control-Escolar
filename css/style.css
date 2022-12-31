@@ -1,0 +1,15 @@
+.seccion{
+    display:none;
+}
+
+.mostrar{
+    display:block;
+}
+.ocultar{
+    visibility: hidden;
+}
+
+.caja{
+    height: 200px;
+    width: 800px;
+}

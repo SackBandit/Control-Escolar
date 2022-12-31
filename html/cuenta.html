@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imgs/escom.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Crear Cuenta</title>
+</head>
+
+<body>
+    
+
+    <h1>Crear Cuenta</h1>
+    <p>Llena el siguiente formulario</p>
+    
+    <nav class="navs">
+            <button type="button" data-paso="1">Datos Personales</button>
+            <button type="button" data-paso="2">Datos Escolares</button>
+            <button type="button" data-paso="3">Contacto</button>
+    </nav>
+
+    <div id="paso-1" class="seccion caja" >
+    <form class="formulario1">
+        <div class="campos">
+            <label for="boleta">Boleta</label>
+            <input type="text" placeholder="Número de Boleta" name="boleta">
+            <br>
+            <label for="password">Contraseña</label>
+            <input type="password" placeholder="Tú contraseña" name="password">
+            <br>
+            <label for="names">Nombre(s)</label>
+            <input type="text" placeholder="Tú Nombre" name="name">
+            <br>
+            <label for="apaterno">Apellido Paterno</label>
+            <input type="text" placeholder="Tú Apellido Paterno" name="apaterno">
+            <br>
+            <label for="amaterno">Apellido Materno</label>
+            <input type="text" placeholder="Tú Apellido Materno" name="amaterno">
+            <br>
+            <label for="date">Fecha de Nacimiento</label>
+            <input type="date" name="date">
+            <br>
+            <label for="estado">Entidad de Nacimiento</label>
+            <select name="estado">
+                <option value="value1">Aguascalientes</option>
+                <option value="value2">Baja California</option>
+                <option value="value3">Baja California Sur</option>
+                <option value="value4">Campeche</option>
+                <option value="value5">Chiapas</option>
+                <option value="value6">Chihuahua</option>
+                <option value="value7">Ciudad de México</option>
+                <option value="value8">Coahuila</option>
+                <option value="value9">Colima</option>
+                <option value="value10">Durango</option>
+                <option value="value11">Estado de México</option>
+                <option value="value12">Guanajuato</option>
+                <option value="value13">Guerrero</option>
+                <option value="value14">Hidalgo</option>
+                <option value="value15">Jalisco</option>
+                <option value="value16">Michoacán</option>
+                <option value="value3">Morelos</option>
+                <option value="value3">Nayarit</option>
+                <option value="value3">Nuevo León </option>
+                <option value="value3">Oaxaca</option>
+                <option value="value3">Puebla</option>
+                <option value="value3">Querétaro</option>
+                <option value="value3">Quintana Roo</option>
+                <option value="value3">San Luis Potosí</option>
+                <option value="value3">Sinaloa</option>
+                <option value="value3">Sonora</option>
+                <option value="value3">Tabasco</option>
+                <option value="value3">Tamaulipas</option>
+                <option value="value3">Tlaxcala</option>
+                <option value="value3">Veracruz</option>
+                <option value="value3">Yucatán</option>
+                <option value="value3">Zacatecas </option>
+              </select>
+            <br>
+            <label for="genero">Género</label>
+            <input type="radio"  name="genero" value="1">Mujer
+            <input type="radio"  name="genero" value="2">Hombre
+            <br>
+            <label for="curp">Curp</label>
+            <input type="text" placeholder="Curp" name="curp">
+        </div>
+    </form>
+    </div>
+
+
+    
+    <div id="paso-2" class="seccion caja">
+        <form id="paso-21" class="formulario2">
+                <label for="escuela">Escuela de procedencia</label>
+                <select id="escuela" name="escuelap">
+                    <option value="c1">CECyT No. 1 Gonzalo Vázquez Vela</option>
+                    <option value="c2">CECyT No. 2 Miguel Bernard</option>
+                    <option value="c3">CECyT No. 3 Estanislao Ramírez Ruiz</option>
+                    <option value="c4">CECyT No. 4 Lázaro Cárdenas</option>
+                    <option value="c5">CECyT No. 5 Benito Juárez</option>
+                    <option value="c6">CECyT No. 6 Miguel Othón de Mendizábal</option>
+                    <option value="c7">CECyT No. 7 Cuauhtémoc</option>
+                    <option value="c8">CECyT No. 8 Narciso Bassols</option>
+                    <option value="c9">CECyT No. 9 Juan de Dios Bátiz</option>
+                    <option value="c10">CECyT No. 10 Carlos Vallejo Márquez</option>
+                    <option value="c11">CECyT No. 11 Wilfrido Massieu</option>
+                    <option value="c12">CECyT No. 12 José María Morelos</option>
+                    <option value="c13">CECyT No. 13 Ricardo Flores Magón</option>
+                    <option value="c14">CECyT No. 14 Luis Enrique Erro</option>
+                    <option value="c15">CECyT No. 15 Diódoro Antúnez Echegaray</option>
+                    <option value="c16">CECyT No. 16 Hidalgo</option>
+                    <option value="c17">CECyT No. 17 León, Guanajuato</option>
+                    <option value="c18">CECyT No. 18 Zacatecas</option>
+                    <option value="c19">CECyT No. 19 Leona Vicario</option>
+                    <option value="c20">CET 1 Walter Cross Buchanan</option>
+                    <option value="otro">Otro..</option>
+                  </select>
+                <br>
+                <label id="labell" for="otro" class="ocultar">Escribe el nombre de tu escuela </label>
+                <input type="text" placeholder="Escuela de procedencia" name="otro" id="newcampo" class="ocultar">
+                <br>
+                <label for="promedio">Promedio</label>
+                <input type="number" placeholder="Promedio Obtenido" name="promedio">
+                <br>
+          
+        </form>
+        </div>    
+
+
+
+        <div id="paso-3" class="seccion caja">
+            <form class="formulario3">
+                <div class="campos">
+    
+                    <label for="calle">Calle: </label>
+                    <input type="text" name="calle" id="calle" placeholder="Nombre de la calle">
+                    <br>
+                   
+                    <label for="numero">Numero Exterior: </label>
+                    <input type="number" name="numero" id="numero" placeholder="Número de la calle">
+                    <br>
+                    
+                    <label for="colonia">Colonia: </label>
+                    <input type="text" name="colonia" id="colonia" placeholder="Colonia">
+                    <br>
+                    <label for="alcaldias">Alcaldia: </label>
+                        <select name="alcaldias" id="alcaldias">
+                            <option >Alcaldía Azcapotzalco</option>
+                            <option >Alcaldía Álvaro Obregón</option>
+                            <option >Alcaldía Benito Juárez</option>
+                            <option >Alcaldía Coyoacán</option>
+                            <option >Alcaldía Cuajimalpa de Morelos</option>
+                            <option >Alcaldía Cuauhtémoc</option>
+                            <option >Alcaldía Gustavo A. Madero</option>
+                            <option >Alcaldía Iztacalco</option>
+                            <option >Alcaldía Iztapalapa</option>
+                            <option >Alcaldía La Magdalena Contreras</option>
+                            <option >Alcaldía Miguel Hidalgo</option>
+                            <option >Alcaldía Milpa Alta</option>
+                            <option >Alcaldía Tlalpan</option>
+                            <option >Alcaldía Tláhuac</option>
+                            <option >Alcaldía Venustiano Carranza</option>
+                            <option >Alcaldía Xochimilco</option>
+                        </select>
+                    <br>
+                        <label for="cp">Código postal: </label>
+                        <input type="number" name="cp" id="cp" placeholder="C.P">
+                    <br>
+                        <label for="phone">Télefono: </label>
+                        <input type="tel" name="phone" id="phone" placeholder="Tu télefono">
+                    <br>
+                        <label for="correo">Correo electronico: </label>
+                        <input type="email" name="correo" id="correo" placeholder="Tú correo">
+                    <br>
+                </div>
+            </form>
+            </div>    
+
+
+
+    <br>
+            <div id="botones">
+                <a id="siguiente" href="resumen.html">Ir al resumen&raquo;</a>
+            </div>
+
+
+
+    <div class="log">
+        <a href="index.html">Si ya tienes cuenta, inicia sesión</a> 
+     </div>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>

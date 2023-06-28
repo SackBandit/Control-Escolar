@@ -1,0 +1,9 @@
+.formulario__grupo-correcto input{
+    border-color:#1ed12d;
+   
+}
+
+.formulario__grupo-incorrecto input{
+    border-color: #bb2929;
+    
+}

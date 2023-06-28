@@ -1,0 +1,195 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #E5E5E5;
+}
+
+main {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+}
+
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+/* * {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #E5E5E5;
+}
+
+main {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+}
+*/
+
+.formulario__label {/*Las etiquetas abarcan el 100% y son de tipo display*/
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {/*grupo donde tenemos el input y el icono*/
+	position: relative;/*Para que cada grupo, boleta, contraseña, tengan un espacio relativo*/
+}
+
+.formulario__input {
+	width: 100%; /*Para que barque todo el espacio dispinble*/
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {/**Hace notar el borde, cuando lo seleccionamos ya el borde deja de ser transparente*/
+	border: 3px solid #0075FF;
+	outline: none;/*quitar un subrayado que le pone el navegador*/
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {/*Es para el texto de error*/
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;/*Oculta el mensaje de error*/
+}
+
+.formulario__input-error-activo {/*Es para volver a mostrar el texto error cuando el input-error esté activo*/
+	display: block;
+}
+
+.formulario__validacion-estado {/*Es ta clase es del icono de error*/
+	position: absolute;/*para posisionarlo dentro del cuadro*/
+	right: 10px;
+	bottom: 15px; 
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;/*Esto es para que no se muestre*/
+}
+
+.formulario__checkbox {/*Esta clase es para terminos, solo crearle un margen*/
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {/*Es para  acceder a los tres y poder alinearlos en toda la hoja*/
+	grid-column: span 2;
+}
+
+.formulario__mensaje {/*Agregar estilo al mensaje de error*/
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {/*Esta es para cuando ya queremos que se apaarezca el mensaje de error*/
+	display: block;
+}
+
+.formulario__mensaje p {/*Modifica el margen parrafo que contiene el mensaje de error para que se alinie*/
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {/*Este es para el boton enviar y el mensaje de éxito*/
+	display: flex;
+	flex-direction: column;/*abarca todas las columnas*/
+	align-items: center;/*los alinea al centro*/
+}
+
+.formulario__btn {/*Este es un estilo para el boton de enviar*/
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: rgb(23, 9, 150);
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {/*al pasar el cursor por el boton de enviar tiene una sombra*/
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {/*Oculta el mensaje de exito y lo pone en verde*/
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {/*activar el mensaje de exito*/
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {/*Cabia el color del icono a verde cuando el grupo tenga esta clase .formulario__grupo-correcto*/
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {/*Este es para que el nombre se ponga en rojo*/
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {/*Este es para que el cono se ponga en rojo*/
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {/*Este es para el color del borde*/
+	border: 3px solid #bb2929;
+} 
+
+/* ----- -----  Mediaqueries ----- ----- */
+/*@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+} */
+.checado, .warn{
+	opacity: 0 !important;
+}
+
+.checado.active, .warn.active{
+	opacity: 1 !important;
+}
+
+.pos{
+	
+		position: absolute;
+		top:  50%;
+		left: 50%;
+	  
+}

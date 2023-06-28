@@ -1,29 +1,182 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../imgs/escom.png">
-    <link rel="stylesheet" href="css/style.css">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Index</title>
-</head>
-<body>
-
-    <h1>Iniciar Sesión</h1>
-    <form class="formulario" method="post" action="#">
-        <div class="campos">
-            <label for="boleta">Boleta</label>
-            <input type="text" placeholder="Número de Boleta" name="boleta">
-            <br>
-            <label for="password">Contraseña</label>
-            <input type="password" placeholder="Tú contraseña" name="password">
-        </div>
-        <input type="submit" class="botton" value="Iniciar Sesión">
-    </form>
-    <div class="crear">
-       <a href="cuenta.html">¿No tienes cuenta? Crear Cuenta</a> 
-    </div>
+    <link href="../css/resumen2.css" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/carrusel.css">
+  </head>
+  <body>
     
-</body>
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><p class="d-inline">ESCOM IPN</p></a>
+      <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Conócenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Oferta Educativa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Escomunidad</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">SSEIS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admin.php">Vista Administrador</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button style="background-color: #6f42c1; color:white; border:none;" class="rounded" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+</header>
+
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active d-item"  data-bs-interval="4000">
+      <img src="../imgs/carrusel2.jpg"  class="d-block w-100 d-img imgAjuste" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5><img src="../imgs/escom.png" class="drop" alt="" height="30%" width="30%"></h5>
+        <p>Escuela Superior de Cómputo</p>
+      </div>
+    </div>
+
+
+    <div class="carousel-item d-item" data-bs-interval="4000">
+      <img src="../imgs/carrusel6.jpg"  class="d-block w-100 d-img imgAjuste"  alt="...">
+      <div class="carousel-caption d-none d-md-block " id="posimg">
+        <img src="../imgs/escom.png"  class="drop" alt="" height="30%" width="30%">
+        <p>Escuela Superior de Cómputo</p>
+      </div>
+    </div>
+
+    <div class="carousel-item d-item" data-bs-interval="4000">
+      <img src="../imgs/carrusel4.jpg"  class="d-block w-100 d-img imgAjuste" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5><img src="../imgs/escom.png" class="drop" alt="" height="30%" width="30%"></h5>
+        <p>Escuela Superior de Cómputo</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div class="card-group">
+
+  
+  <div class="card">
+    <div class="svgstyle" style="text-align: center;">
+      <p style="margin-top:10px; color:#ff7235"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+        <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+        <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+      </svg></p>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Contactanos!</h5>
+      <p class="card-text">Si necesitas actualizar Y corregir tus datos, envianos un correo.</p>
+      <a href="#formulario" class="btn"  style="background-color:#ff7235; color:white">Ir al formulario</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="svgstyle" style="text-align: center;">
+      <p style="margin-top:10px; color:#ffc338;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+      </svg></p>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Crear Cuenta</h5>
+      <p class="card-text">¿Aún no tienes una cuenta? Registrate para obtener una.</p>
+      <a href="cuenta.php" class="btn"  style="background-color:#ffc338; color:white">Ir al formulario</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="svgstyle" style="text-align: center;">
+      <p style="margin-top:10px; color:#39ffa3;"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg></p>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Consultar Datos</h5>
+      <p class="card-text">Si necesitas consultar tus datos o recuperar tu archivo PDF, consultalo aquí</p>
+      <a href="recuperar.php" class="btn"  style="background-color:#39ffa3; color:white">Consultar</a>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+<a name="formulario"></a>
+<div class="container w-50" style="box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);">
+  <h2 style="text-align: center;"><p style="margin-top:10px; color:#ff7235"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+    <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+    <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+  </svg></p>¡Contactanos!</h2>
+<form>
+  <div class="container">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">El correo con el que te registraste.</div>
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Mensaje</label>
+    <br>
+    <textarea name="mensaje" id="" class="form-control"cols="" rows="6"></textarea>
+  </div>
+  <div style="text-align: center;">
+  <button type="submit" style="background-color:#ff7235;" class="btn">Enviar</button>
+</div>
+  </div>
+</form>
+</div>
+<br>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Volver</a></p>
+    <p style="text-align: center;">&copy; ESCOM IPN, 2023. &middot; </p>
+  </footer>
+
+
+  <script type="text/javascript" src="../jquery/jquery-3.6.3.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="../js/resumen.js"></script>
+  </body>
 </html>

@@ -9,7 +9,64 @@
     visibility: hidden;
 }
 
-.caja{
-    height: 200px;
-    width: 800px;
+
+.titulo{
+    text-align: center;
 }
+
+
+.tamselect{
+    width: 70%;
+}
+.contenedor{
+    margin:0 15%;
+}
+.navs{
+    margin-bottom: 10px;
+}
+.boton{
+    color:white;
+    background: none;
+    border: none;
+    
+}
+
+.colorOn{
+    background-color: #2e43ff;
+}
+
+.caja{
+    width: 10px;
+}
+
+.banner{
+    width: 600px;
+    display: inline;
+}
+
+.centrar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.centrar1{
+    margin:25%;
+    
+    
+}
+.posimg{
+
+    position: absolute;
+    transform: translate(15%,-8%);
+    overflow: hidden;
+
+}
+.tam{
+    width: 70%;
+    opacity: 15%;
+    
+}
+
+
